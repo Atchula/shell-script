@@ -6,9 +6,9 @@
 #!/bin/bash
 
 # Checking User Is Root Or Not
-CURRENTUSER=${USER}
+declare CURRENTUSER=$1
 
-echo "CURRENT  USER IS : ${USER}"
+echo "CURRENT  USER IS : ${CURRENTUSER}"
 
 if [ ${CURRENTUSER} != root ]
 then
