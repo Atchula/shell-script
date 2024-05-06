@@ -1,6 +1,10 @@
 #!/bin/bash
 # This Is Variables
-echo "Hanu : How Are You?"
-echo "Rupa : I am Fine..How Are You?"
-echo "Hanu  : I am Fine How Is Your Coaching"
-echo "Rupa : Good.."
+
+# Variable Declarations
+PERSON1="Hanu"
+PERSON2="Rupa"
+echo "${PERSON1} : How Are You?"
+echo "${PERSON2} : I am Fine..How Are You?"
+echo "${PERSON1}  : I am Fine How Is Your Coaching"
+echo "${PERSON2} : Good.."
