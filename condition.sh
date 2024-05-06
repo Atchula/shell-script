@@ -8,6 +8,8 @@
 # Checking User Is Root Or Not
 CURRENTUSER=${USER}
 
+echo "CURRENT  USER IS : ${USER}"
+
 if [ ${CURRENTUSER} != root ]
 then
     echo "User Is NOT Root"
