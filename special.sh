@@ -2,5 +2,6 @@
 ## Author : Hanu
 ##########################
 #!/bin/bash
- # Process Id Of Current
- echo "Process Id : ${$}"
+ echo "Process Id Of Current Script : ${$}"
+ sleep 60 &
+ echo "process id previous background : ${!}"
