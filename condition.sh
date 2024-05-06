@@ -31,5 +31,5 @@ then
   echo "Installation of git...FAILURE"
   exit 1
 else
-echo "Installation of mysql...SUCCESS"
+echo "Installation of git...SUCCESS"
 fi
