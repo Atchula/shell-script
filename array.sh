@@ -4,7 +4,7 @@
 #!/bin/bash
 
 # Declaring Menu
-menu = ("IDLY" "DOSA" "SAMBAR" "CHUTNEY")
+menu=("IDLY" "DOSA" "SAMBAR" "CHUTNEY")
 
 # Printing First Item
 echo "First Item Is : ${menu[0]}"
