@@ -10,5 +10,5 @@ PERSON2=${2}
 
 # Refering Variables
 
-echo "Hello : ${PERSON1}"
-echo "Hello : ${PERSON2}"
+echo "Hello : ${@}"
+# echo "Hello : ${PERSON2}"
