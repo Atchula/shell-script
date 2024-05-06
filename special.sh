@@ -3,5 +3,5 @@
 ##########################
 #!/bin/bash
 
-# USER
-echo "User Running Is Script : ${USER}"
+# HostName
+echo "HostName : ${HOSTNAME}"
