@@ -9,5 +9,7 @@ USER=$(id -u)
 if [ ${USER} == 0 ]
 then
      echo "Admin,Proceed"
+else
+     echo "Script Running without Admin,Aborted"
 fi
 dnf install mysql -y
