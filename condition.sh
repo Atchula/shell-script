@@ -6,7 +6,7 @@
 #!/bin/bash
 
 # Checking User Is Root Or Not
-CURRENTUSER=$1
+CURRENTUSER=${USER}
 
 if [ ${CURRENTUSER} != root ]
 then
