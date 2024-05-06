@@ -7,9 +7,9 @@
 
 # Checking User Is Root Or Not
 CURRENTUSER=${USER}
-if [  ${CURRENTUSER} -eq 'root' ]
+if [ ${CURRENTUSER} -nq 'root' ]
 then
-    echo "User Is Root"
+    echo "User Is NOT Root"
 else
-    echo "User Is Not Root"
+    echo "User Is Root"
 fi
