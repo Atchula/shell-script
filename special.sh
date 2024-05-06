@@ -3,5 +3,5 @@
 ##########################
 #!/bin/bash
 
-# Home Directory 
-echo "User Home Directory : ${HOME}"
+# USER
+echo "User Running Is Script : ${USER}"
