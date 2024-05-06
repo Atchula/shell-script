@@ -7,4 +7,5 @@
 read -p "Login As :" USERNAME
 read -p "Password :" -s PASSWORD
 # Print
+echo ""
 echo "Login Details Are : ${USERNAME}.... ${PASSWORD}"
