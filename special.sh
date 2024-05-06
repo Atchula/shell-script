@@ -2,6 +2,5 @@
 ## Author : Hanu
 ##########################
 #!/bin/bash
-
-# HostName
-echo "HostName : ${HOSTNAME}"
+ # Process Id Of Current
+ echo "Process Id : ${$}"
