@@ -5,6 +5,6 @@
 #!/bin/bash
 # Prompt For UserName and PassWord
 read -p "Login As :" USERNAME
-read -ps "Password :" PASSWORD
+read -p "Password :" -s PASSWORD
 # Print
 echo "Login Details Are : ${USERNAME}.... ${PASSWORD}"
