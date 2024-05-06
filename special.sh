@@ -3,5 +3,5 @@
 ##########################
 #!/bin/bash
 
-# Print CWD
-echo "Current Working Directory : ${PWD}"
+# Home Directory 
+echo "User Home Directory : ${HOME}"
