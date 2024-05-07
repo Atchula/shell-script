@@ -46,7 +46,7 @@ VALIDATE_USER
 
 
 # # Install Package 
- dnf install nginx -y  &>> LOGFILE
+ dnf install nginx -y  &>> $LOGFILE
 
  VALIDATE_PACKAGE $? "Nginx"
 
