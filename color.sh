@@ -26,10 +26,13 @@ fi
 
 }
 
-VALIDATE_PACKAGE()
-{
+# Calling Validate User
+VALIDATE_USER
 
-}
+# VALIDATE_PACKAGE()
+# {
+
+# }
 
 
 # # Install Package 
