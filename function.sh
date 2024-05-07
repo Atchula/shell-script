@@ -5,7 +5,7 @@
 #!/bin/bash
 
 # Getting User Details
-USER = $(id -u)
+USER=$(id -u)
 
 # Declaring Function To Validate
 VALIDATE()
@@ -16,6 +16,7 @@ VALIDATE()
     else
        echo "Run with Admin Access!!!!"
        exit 1
+    fi
 }
 
 # Calling Validate Function To Check User Admin Or NOt
