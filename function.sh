@@ -41,7 +41,7 @@ echo "LOGFILE : ${LOGFILE}"
 
 
 # Installing Package
-dnf install nginx &>> ${LOGFILE}
+dnf install nginx -y  &>> ${LOGFILE}
 
 # Validate Package
 VALIDATE_PACKAGE $? "NGINX"
