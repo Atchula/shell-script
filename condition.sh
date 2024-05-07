@@ -11,10 +11,10 @@ validate()
 
   if [ ${1} != 0 ]
 then 
-  echo "Installation of $2..... SUCESSS"
+  echo "Installation of $2..... FAILURE"
   exit 1
 else
-  echo "Installation of $2.....FAILURE"
+  echo "Installation of $2.....SUCCESS"
 fi
 
 }
