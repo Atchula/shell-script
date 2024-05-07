@@ -10,7 +10,7 @@ USER=$(id -u)
 # Log File Creation
 TIMESTAMP=$(date +%F-%H-%M-%S)
 SCRIPTNAME=$(echo ${0} | cut -d "." -f1)
-LOGFILE=${SCRIPTNAME}-${TIMESTAMP}.log
+LOGFILE=/tmp/${SCRIPTNAME}-${TIMESTAMP}.log
 
 # Declaring Function To Validate
 VALIDATE_USER()
