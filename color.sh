@@ -13,6 +13,7 @@ green="\e[32m"
 USER=$(id -u)  
 
 LOGFILE="/tmp/$(echo $0 | cut -d "." -f1)-$(date +%F-%H-%M-%S).log"
+echo "$LOGFILE"
 
 # Function To Check User Admin or Not
 VALIDATE_USER()
