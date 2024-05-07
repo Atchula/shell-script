@@ -6,6 +6,19 @@
 #!/bin/bash
 USER=$(id -u)
 
+validate()
+{
+
+  if [ ${1} != 0 ]
+then 
+  echo "Installation of $2..... SUCESSS"
+  exit 1
+else
+  echo "Installation of $2.....FAILURE"
+fi
+
+}
+
 if [ ${USER} == 0 ]
 then
      echo "Admin,Proceed"
@@ -16,20 +29,9 @@ fi
 
 
 dnf install mysql -y
-if [ $? != 0 ]
-then 
-  echo "Installation of mysql..... FAILURE"
-  exit 1
-else
-  echo "Installation of mysql.....SUCCESS"
-fi
+
+validate ${?} "mysql"
 
 dnf install git -y 
 
-if [ $? !=0 ]
-then 
-  echo "Installation of git...FAILURE"
-  exit 1
-else
-echo "Installation of git...SUCCESS"
-fi
+validate ${?} "git"
