@@ -14,13 +14,13 @@ normal="\e[0m"
 packages=("mysql" "nginx" "mysql-server")
 
 # Create LOGFILE
-LOGILE="/tmp/$(echo $0 | cut -d "." -f1)-$(date +%F-%H-%M-%S).log"
+LOGFILE="/tmp/$(echo $0 | cut -d "." -f1)-$(date +%F-%H-%M-%S).log"
 
 # Checking Package
 
 validate_package()
 {
-if [ $1 == 0]
+if [ $1 == 0 ]
 then 
   echo -e "$red $2 Installation Success $normal"
 else
