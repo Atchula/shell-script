@@ -9,7 +9,7 @@ USER=$(id -u)
 
 # Log File Creation
 TIMESTAMP=$(date +%F-%H-%M-%S)
-SCRIPTNAME=${0}
+SCRIPTNAME=$(echo ${0} | cut -d "." -f1)
 LOGFILE=${SCRIPTNAME}-${TIMESTAMP}.log
 
 # Declaring Function To Validate
