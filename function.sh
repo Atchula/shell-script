@@ -7,6 +7,11 @@
 # Getting User Details
 USER=$(id -u)
 
+# Log File Creation
+TIMESTAMP=$(date +%F-%H-%M-%S)
+SCRIPTNAME=${0}
+LOGFILE=${SCRIPTNAME}-${TIMESTAMP}.log
+
 # Declaring Function To Validate
 VALIDATE()
 {
@@ -21,6 +26,7 @@ VALIDATE()
 
 # Calling Validate Function To Check User Admin Or NOt
 VALIDATE ${USER}
+echo "LOGFILE : ${LOGFILE}"
 
 
 
